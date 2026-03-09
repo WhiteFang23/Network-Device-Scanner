@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Scanner Dashboard</title>
+</head>
+<body>
+
+<h2>Welcome {{ username }}</h2>
+
+<h3>Start Network Scan</h3>
+
+<form method="POST" action="/scan">
+    <input type="text" name="target" placeholder="127.0.0.1 or 192.168.1.0/24" required>
+    <button type="submit">Scan</button>
+</form>
+
+<hr>
+
+<h3>Scan Results</h3>
+
+<table border="1">
+<tr>
+    <th>Target</th>
+    <th>IP</th>
+    <th>Port</th>
+    <th>Service</th>
+    <th>Risk</th>
+</tr>
+
+{% for result in results %}
+<tr>
+    <td>{{ result.target }}</td>
+    <td>{{ result.ip }}</td>
+    <td>{{ result.port }}</td>
+    <td>{{ result.service }}</td>
+    <td>{{ result.risk }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+<br>
+<a href="/logout">Logout</a>
+
+</body>
+</html>
