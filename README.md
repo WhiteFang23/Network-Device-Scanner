@@ -1,10 +1,10 @@
-🛰️ Network Device Scanner
+## 🛰️ Network Device Scanner
 
 A web-based network scanning tool built using Python, Flask, and Nmap that allows authenticated users to scan networks, identify live hosts, detect open ports, and discover running services through an interactive dashboard.
 
 The application automates Nmap scanning using a Flask backend and stores scan results in a database, enabling users to track and monitor network services efficiently.
-
-📌 Project Overview
+---
+## 📌 Project Overview
 
 Network scanning is a crucial step in cybersecurity for identifying exposed services and potential attack surfaces within a network.
 
@@ -17,8 +17,8 @@ This project implements a Network Device Scanner that integrates Nmap with a web
 ⚙️ Service detection
 
 The system provides an authenticated dashboard where users can perform scans and view results in a structured format.
-
-✨ Key Features
+---
+## ✨ Key Features
 🔐 Authentication System
 
 Secure user login and registration
@@ -50,8 +50,8 @@ Displays scan results in a structured table
 Allows users to perform scans from the web interface
 
 Shows previously scanned results
-
-🛠️ Tech Stack
+---
+## 🛠️ Tech Stack
 ⚙️ Backend
 
 🐍 Python
@@ -79,8 +79,8 @@ Werkzeug password hashing
 🎨 Frontend
 
 HTML
-
-🧠 Security Concepts Demonstrated
+---
+## 🧠 Security Concepts Demonstrated
 
 🔎 Network reconnaissance
 
@@ -103,13 +103,14 @@ HTML
 ⏱️ Real-time scan progress
 
 🐳 Docker deployment
-
-👨‍💻 Author
+---
+## 👨‍💻 Author
 
 Prabhat Patel
 🎓 B.Tech Computer Science
 🛡️ Cybersecurity Enthusiast
-
-⚠️ Disclaimer
+---
+## ⚠️ Disclaimer
 
 This project is intended for educational and security research purposes only. Do not scan networks without proper authorization.
+---
